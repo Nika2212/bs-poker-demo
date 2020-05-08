@@ -15,7 +15,7 @@ module.exports = {
     // Vendor Assets Source Path (compiles in alphabetic order if file array isn't specified)
     vendorScriptPath: "./src/third-party/js",
     vendorStylePath: "./src/third-party/css",
-    vendorScriptFileArray: ["notch-detect.min.js"],
+    vendorScriptFileArray: [],
     vendorStyleFileArray: [],
     // Vendor Assets Output Filename (without extension)
     vendorScriptName: "vendor",
