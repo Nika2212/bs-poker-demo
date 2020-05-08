@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poker Gameplay Demo</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <div class="application">
+        <div class="wrapper">
+            <div class="table-layout">
+                <img src="dist/placeholder.png" alt="">
+            </div>
+            <div class="m-layout">
+                <div class="top-panel">
+                    <div class="content-row">
+                        <div class="chips-refill-btn">
+                            <button type="button">
+                                <img src="" alt="">
+                            </button>
+                        </div>
+                        <div class="menu-btn">
+                            <button type="button">
+                                <img src="" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-row">
+                        <div class="leave-table-btn">
+                            <button type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-panel">
+                    <div class="content-row">
+                        <div class="chat-btn">
+                            <button type="button"></button>
+                        </div>
+                        <div class="time-indicator">
+                            <img src="" alt="">
+                            <label>30<br>time bank</label>
+                        </div>
+                    </div>
+                    <div class="content-row">
+                        <div class="in-game-action-tab">
+                            <div class="in-game-action-btn"><button type="button">fold</button></div>
+                            <div class="in-game-action-btn"><button type="button">call <span>0.06gel</span></button></div>
+                            <div class="in-game-action-btn"><button type="button">raise</button></div>
+                        </div>
+                        <div class="in-game-betting-tab">
+                            <div class="range-betting">
+                                <div class="range-picker">
+                                    <div class="range-minmax">
+                                        <small>0.00</small>
+                                        <small>10</small>
+                                    </div>
+                                    <div class="range-input">
+                                        <button type="button">-</button>
+                                        <input type="range">
+                                        <button type="button">+</button>
+                                    </div>
+                                </div>
+                                <div class="betting-value">
+                                    <input type="number" value="0.18">
+                                </div>
+                            </div>
+                            <div class="quick-multiply">
+                                <button>x2</button>
+                                <button>x2.5</button>
+                                <button>x3</button>
+                                <button>x3.5</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/vendor.js"></script>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>

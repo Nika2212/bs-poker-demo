@@ -1,0 +1,417 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: purple; }
+
+input, button {
+  background-color: transparent;
+  border: none;
+  outline: none; }
+
+button {
+  cursor: pointer; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500; }
+
+span {
+  display: inline-block; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.application {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: red; }
+  .application .wrapper {
+    position: relative;
+    width: auto;
+    height: 100%;
+    background: #191e25;
+    background: -moz-linear-gradient(0deg, #191e25 0%, #191e25 50%, #191e25 100%);
+    background: -webkit-linear-gradient(0deg, #191e25 0%, #191e25 50%, #191e25 100%);
+    background: linear-gradient(0deg, #191e25 0%, #191e25 50%, #191e25 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#191e25",endColorstr="#191e25",GradientType=1);
+    box-sizing: border-box; }
+    .application .wrapper .table-layout {
+      padding-bottom: 90px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      box-sizing: border-box; }
+      .application .wrapper .table-layout img {
+        max-width: 100%;
+        max-height: 100%;
+        box-sizing: border-box; }
+
+.m-layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .m-layout .top-panel {
+    padding-top: 34px;
+    padding-left: 13px;
+    padding-right: 13px;
+    width: 100%;
+    height: auto; }
+    .m-layout .top-panel .content-row {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      .m-layout .top-panel .content-row:last-child {
+        margin-top: 3px; }
+    .m-layout .top-panel .chips-refill-btn button {
+      width: 63px;
+      height: 34px;
+      border-radius: 4px;
+      background-color: #44a802;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .m-layout .top-panel .chips-refill-btn button img {
+        max-width: 23px; }
+    .m-layout .top-panel .menu-btn {
+      margin-left: auto;
+      margin-right: 0; }
+      .m-layout .top-panel .menu-btn button {
+        width: 34px;
+        height: 34px;
+        border-radius: 4px;
+        background-color: #242b34;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .m-layout .top-panel .menu-btn button img {
+          max-width: 19px; }
+    .m-layout .top-panel .leave-table-btn {
+      margin-left: auto;
+      margin-right: 0; }
+      .m-layout .top-panel .leave-table-btn button {
+        width: 34px;
+        height: 34px;
+        border-radius: 4px;
+        background-color: #242b34;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .m-layout .top-panel .leave-table-btn button img {
+          max-width: 14px; }
+  .m-layout .bottom-panel {
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-top: auto;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto; }
+    .m-layout .bottom-panel .content-row {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      .m-layout .bottom-panel .content-row:last-child {
+        margin-top: 7px; }
+    .m-layout .bottom-panel .chat-btn button {
+      width: 46px;
+      height: 46px;
+      border-radius: 100%;
+      background-color: #38424e;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .m-layout .bottom-panel .chat-btn button img {
+        max-width: 22px; }
+    .m-layout .bottom-panel .time-indicator {
+      padding-left: 7px;
+      padding-right: 7px;
+      margin-left: auto;
+      margin-right: 0;
+      width: 104px;
+      height: 40px;
+      border-radius: 40px;
+      background-color: #38424e;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      .m-layout .bottom-panel .time-indicator img {
+        margin-right: 7px;
+        max-width: 24px; }
+      .m-layout .bottom-panel .time-indicator label {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 9.23px;
+        color: #dee9f7;
+        text-transform: uppercase;
+        text-align: center; }
+    .m-layout .bottom-panel .in-game-action-tab {
+      padding-left: 9px;
+      padding-right: 9px;
+      padding-top: 10px;
+      width: 414px;
+      min-width: 260px;
+      height: 86px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: #242b34;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn {
+        width: 127px;
+        height: 63px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn button {
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          border-top: 2px solid;
+          background-color: #dee9f7;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 13px;
+          color: #ffffff;
+          text-transform: uppercase;
+          text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
+        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn:nth-child(1) button {
+          border-color: #ff4747;
+          background: #f12020;
+          background: -moz-radial-gradient(ellipse at top, #f12020 0%, #c20808 100%);
+          background: -webkit-radial-gradient(ellipse at top, #f12020 0%, #c20808 100%);
+          background: radial-gradient(ellipse at top, #f12020 0%, #c20808 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f12020", endColorstr="#c20808", GradientType=1); }
+        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn:nth-child(2) button {
+          border-color: #a1ff5e;
+          background: #67f000;
+          background: -moz-radial-gradient(ellipse at top, #67f000 0%, #45a902 100%);
+          background: -webkit-radial-gradient(ellipse at top, #67f000 0%, #45a902 100%);
+          background: radial-gradient(ellipse at top, #67f000 0%, #45a902 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#67f000", endColorstr="#45a902", GradientType=1); }
+        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn:nth-child(3) button {
+          border-color: #ffcc6b;
+          background: #f7b436;
+          background: -moz-radial-gradient(ellipse at top, #f7b436 0%, #be7e05 100%);
+          background: -webkit-radial-gradient(ellipse at top, #f7b436 0%, #be7e05 100%);
+          background: radial-gradient(ellipse at top, #f7b436 0%, #be7e05 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7b436", endColorstr="#be7e05", GradientType=1); }
+    .m-layout .bottom-panel .in-game-betting-tab {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 7px;
+      margin-left: auto;
+      margin-right: 0;
+      width: 362px;
+      height: 86px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: #242b34;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      .m-layout .bottom-panel .in-game-betting-tab .range-betting {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row; }
+        .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker {
+          width: 254px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start; }
+          .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax {
+            padding-left: 17px;
+            padding-right: 17px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; }
+            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small {
+              font-family: "Montserrat", sans-serif;
+              font-weight: 500;
+              font-size: 8.74px;
+              color: #000; }
+              .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small:first-child {
+                color: #ffb26c; }
+              .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small:last-child {
+                color: #8495ac; }
+          .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; }
+            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input button {
+              width: 13px;
+              height: 13px;
+              border-radius: 4px;
+              background-color: #444f5e;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 500;
+              font-size: 13.73px;
+              color: #d1e6ff;
+              line-height: 8px; }
+            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input {
+              margin-left: 4px;
+              margin-right: 4px;
+              width: 220px; }
+        .m-layout .bottom-panel .in-game-betting-tab .range-betting .betting-value {
+          margin-left: auto;
+          margin-right: 0; }
+          .m-layout .bottom-panel .in-game-betting-tab .range-betting .betting-value input {
+            width: 80px;
+            height: 26px;
+            border: 1px solid #323d4a;
+            border-radius: 10px;
+            background-color: #1d232b;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 10.72px;
+            color: #ffffff;
+            text-align: center; }
+      .m-layout .bottom-panel .in-game-betting-tab .quick-multiply {
+        margin-top: 3px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .m-layout .bottom-panel .in-game-betting-tab .quick-multiply button {
+          width: 79px;
+          height: 31px;
+          background-color: #dae1e9;
+          border-radius: 4px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+          font-size: 13.8px;
+          color: #1f1f1f; }
+
+@media (max-width: 811px) {
+  .m-layout .top-panel {
+    padding-top: 13px;
+    padding-left: 8px;
+    padding-right: 8px; }
+    .m-layout .top-panel .chips-refill-btn button {
+      width: 29px;
+      height: 29px; }
+      .m-layout .top-panel .chips-refill-btn button img {
+        max-width: 19px; }
+    .m-layout .top-panel .menu-btn button {
+      width: 29px;
+      height: 29px; }
+      .m-layout .top-panel .menu-btn button img {
+        max-width: 19px; }
+    .m-layout .top-panel .leave-table-btn button {
+      width: 29px;
+      height: 29px; }
+      .m-layout .top-panel .leave-table-btn button img {
+        max-width: 19px; }
+  .m-layout .bottom-panel {
+    padding-left: 6px;
+    padding-right: 6px; }
+    .m-layout .bottom-panel .content-row:last-child {
+      margin-top: 5px; }
+    .m-layout .bottom-panel .chat-btn button {
+      width: 29px;
+      height: 29px; }
+      .m-layout .bottom-panel .chat-btn button img {
+        max-width: 19px; }
+    .m-layout .bottom-panel .time-indicator {
+      padding-left: 4px;
+      padding-right: 4px;
+      width: 75px;
+      height: 29px;
+      border-radius: 29px; }
+      .m-layout .bottom-panel .time-indicator img {
+        max-width: 13px; }
+      .m-layout .bottom-panel .time-indicator label {
+        font-size: 7px; }
+    .m-layout .bottom-panel .in-game-action-tab {
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 6px;
+      width: 297px;
+      height: 69px; }
+      .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn {
+        width: 90px;
+        height: 54px; }
+        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn button {
+          font-size: 11px; }
+    .m-layout .bottom-panel .in-game-betting-tab {
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 6px;
+      width: 255px;
+      height: 69px; }
+      .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker {
+        width: 178px; }
+        .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small {
+          font-size: 7px; }
+        .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input button {
+          width: 11px;
+          height: 11px; }
+        .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input {
+          width: 149px;
+          height: 11px; }
+      .m-layout .bottom-panel .in-game-betting-tab .range-betting .betting-value input {
+        width: 57px;
+        height: 22px;
+        border-radius: 5px;
+        font-size: 9px; }
+      .m-layout .bottom-panel .in-game-betting-tab .quick-multiply {
+        padding-top: 1px; }
+        .m-layout .bottom-panel .in-game-betting-tab .quick-multiply button {
+          width: 56px;
+          height: 27px;
+          font-size: 11.75px; } }
