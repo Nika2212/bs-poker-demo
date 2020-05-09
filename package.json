@@ -4,6 +4,7 @@
   "repository": "https://github.com/Nika2212/GulPack",
   "description": "Gulpack is free bundler, combined with Gulp 4 + Webpack 4. Also fully supports TypeScript and Sass.",
   "scripts": {
+    "prod": "gulp prod",
     "build": "gulp build",
     "serve": "gulp serve"
   },

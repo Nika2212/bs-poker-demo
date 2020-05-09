@@ -1,6 +1,4 @@
 module.exports = {
-    // Developing Mode
-    mode: "production",
     // Assets Input Source Path
     scriptPath: "./src/script",
     stylePath: "./src/style",

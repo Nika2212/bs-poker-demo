@@ -1,5 +1,6 @@
 document.addEventListener("load", () => {
     if (isDevice()) {
+        enableMobileLayout();
         detectOrientation();
         window.addEventListener("orientationchange", detectOrientation, true);
     }
@@ -20,4 +21,7 @@ function detectOrientation() {
     } else {
         // Rotation Notification Toggle
     }
+}
+function enableMobileLayout() {
+    document.getElementById("mobile-layout").style.display = "flex";
 }
