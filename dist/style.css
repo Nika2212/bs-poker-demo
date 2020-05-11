@@ -77,11 +77,6 @@ input[type=number] {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .application .wrapper .overlay * {
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none; }
       .application .wrapper .overlay .popup {
         position: relative;
         width: auto;
@@ -91,8 +86,7 @@ input[type=number] {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        overflow: hidden;
-        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); }
+        overflow: hidden; }
         .application .wrapper .overlay .popup .popup-header {
           padding-left: 30px;
           padding-right: 30px;
@@ -339,43 +333,123 @@ input[type=number] {
               border-color: #3b4a5d;
               background-color: #3b4a5d; }
 
-.application .wrapper .overlay .popup-mobile {
-  width: 400px; }
-  .application .wrapper .overlay .popup-mobile .popup-header .popup-heading {
-    font-size: 13px; }
-  .application .wrapper .overlay .popup-mobile .popup-header .popup-close-btn {
-    width: 13px;
-    height: 13px; }
-  .application .wrapper .overlay .popup-mobile.leave-table .popup-body {
+body[device="true"] .application .wrapper .overlay .popup {
+  width: 400px;
+  background-color: #38424e; }
+  body[device="true"] .application .wrapper .overlay .popup .popup-header {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 48px; }
+    body[device="true"] .application .wrapper .overlay .popup .popup-header .popup-heading {
+      font-size: 13px; }
+    body[device="true"] .application .wrapper .overlay .popup .popup-header .popup-close-btn {
+      width: 13px;
+      height: 13px; }
+  body[device="true"] .application .wrapper .overlay .popup.leave-table .popup-body {
     padding-top: 21px;
     height: 128px; }
+    body[device="true"] .application .wrapper .overlay .popup.leave-table .popup-body img {
+      width: 52px;
+      height: 52px; }
+    body[device="true"] .application .wrapper .overlay .popup.leave-table .popup-body p {
+      margin-top: 18px;
+      font-size: 15px; }
+  body[device="true"] .application .wrapper .overlay .popup.leave-table .popup-action {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 90px; }
+    body[device="true"] .application .wrapper .overlay .popup.leave-table .popup-action button {
+      width: 106px;
+      height: 40px;
+      font-size: 14px; }
+  body[device="true"] .application .wrapper .overlay .popup.player-note {
+    width: 490px; }
+    body[device="true"] .application .wrapper .overlay .popup.player-note .popup-body {
+      padding: 15px;
+      height: 140px; }
+      body[device="true"] .application .wrapper .overlay .popup.player-note .popup-body textarea {
+        font-size: 13px; }
+        body[device="true"] .application .wrapper .overlay .popup.player-note .popup-body textarea::-webkit-input-placeholder {
+          font-size: 13px; }
+        body[device="true"] .application .wrapper .overlay .popup.player-note .popup-body textarea::-moz-placeholder {
+          font-size: 13px; }
+        body[device="true"] .application .wrapper .overlay .popup.player-note .popup-body textarea::-ms-input-placeholder {
+          font-size: 13px; }
+        body[device="true"] .application .wrapper .overlay .popup.player-note .popup-body textarea::placeholder {
+          font-size: 13px; }
+    body[device="true"] .application .wrapper .overlay .popup.player-note .popup-action {
+      padding-left: 15px;
+      padding-right: 15px; }
+      body[device="true"] .application .wrapper .overlay .popup.player-note .popup-action button {
+        width: 106px;
+        height: 39px;
+        font-size: 14px; }
+      body[device="true"] .application .wrapper .overlay .popup.player-note .popup-action .player-note-color {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: 63px; }
+        body[device="true"] .application .wrapper .overlay .popup.player-note .popup-action .player-note-color span {
+          width: 27px;
+          height: 27px; }
+        body[device="true"] .application .wrapper .overlay .popup.player-note .popup-action .player-note-color img {
+          width: 12px; }
+  body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-body {
+    height: 160px; }
+    body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-body .not-allow-buying {
+      padding-top: 15px; }
+      body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-body .not-allow-buying .alert-icon img {
+        max-width: 42px; }
+      body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-body .not-allow-buying .alert-text {
+        margin-top: 10px;
+        font-size: 13px; }
+      body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-body .not-allow-buying .divider {
+        margin-top: 15px; }
+      body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-body .not-allow-buying .available-balance {
+        margin-top: 12px; }
+        body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-body .not-allow-buying .available-balance label {
+          font-size: 10px; }
+          body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-body .not-allow-buying .available-balance label:last-child {
+            font-size: 12px; }
+      body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-body .not-allow-buying .in-buy {
+        margin-top: 8px;
+        font-size: 10px; }
+  body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-action {
+    height: 70px; }
+    body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-action button {
+      width: 84px;
+      height: 32px;
+      font-size: 11.5px; }
+      body[device="true"] .application .wrapper .overlay .popup.add-chips .popup-action button:first-child {
+        margin-right: 25px; }
 
-.m-layout {
+body[device="true"] .m-layout {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  display: none;
+  display: flex !important;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; }
-  .m-layout .top-panel {
+  body[device="true"] .m-layout .top-panel {
     padding-top: 34px;
     padding-left: 13px;
     padding-right: 13px;
     width: 100%;
     height: auto; }
-    .m-layout .top-panel .content-row {
+    body[device="true"] .m-layout .top-panel .content-row {
       width: 100%;
       height: auto;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center; }
-      .m-layout .top-panel .content-row:last-child {
+      body[device="true"] .m-layout .top-panel .content-row:nth-child(2) {
         margin-top: 3px; }
-    .m-layout .top-panel .chips-refill-btn button {
+      body[device="true"] .m-layout .top-panel .content-row:nth-child(3) {
+        margin-top: 3px; }
+    body[device="true"] .m-layout .top-panel .chips-refill-btn button {
       width: 63px;
       height: 34px;
       border-radius: 4px;
@@ -384,12 +458,12 @@ input[type=number] {
       flex-direction: row;
       justify-content: center;
       align-items: center; }
-      .m-layout .top-panel .chips-refill-btn button img {
+      body[device="true"] .m-layout .top-panel .chips-refill-btn button img {
         max-width: 23px; }
-    .m-layout .top-panel .menu-btn {
+    body[device="true"] .m-layout .top-panel .menu-btn {
       margin-left: auto;
       margin-right: 0; }
-      .m-layout .top-panel .menu-btn button {
+      body[device="true"] .m-layout .top-panel .menu-btn button {
         width: 34px;
         height: 34px;
         border-radius: 4px;
@@ -398,12 +472,12 @@ input[type=number] {
         flex-direction: row;
         justify-content: center;
         align-items: center; }
-        .m-layout .top-panel .menu-btn button img {
+        body[device="true"] .m-layout .top-panel .menu-btn button img {
           max-width: 19px; }
-    .m-layout .top-panel .leave-table-btn {
+    body[device="true"] .m-layout .top-panel .fullscreen-btn {
       margin-left: auto;
       margin-right: 0; }
-      .m-layout .top-panel .leave-table-btn button {
+      body[device="true"] .m-layout .top-panel .fullscreen-btn button {
         width: 34px;
         height: 34px;
         border-radius: 4px;
@@ -412,25 +486,39 @@ input[type=number] {
         flex-direction: row;
         justify-content: center;
         align-items: center; }
-        .m-layout .top-panel .leave-table-btn button img {
+        body[device="true"] .m-layout .top-panel .fullscreen-btn button img {
+          max-width: 19px; }
+    body[device="true"] .m-layout .top-panel .leave-table-btn {
+      margin-left: auto;
+      margin-right: 0; }
+      body[device="true"] .m-layout .top-panel .leave-table-btn button {
+        width: 34px;
+        height: 34px;
+        border-radius: 4px;
+        background-color: #242b34;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        body[device="true"] .m-layout .top-panel .leave-table-btn button img {
           max-width: 14px; }
-  .m-layout .bottom-panel {
+  body[device="true"] .m-layout .bottom-panel {
     padding-left: 13px;
     padding-right: 13px;
     margin-top: auto;
     margin-bottom: 0;
     width: 100%;
     height: auto; }
-    .m-layout .bottom-panel .content-row {
+    body[device="true"] .m-layout .bottom-panel .content-row {
       width: 100%;
       height: auto;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center; }
-      .m-layout .bottom-panel .content-row:last-child {
+      body[device="true"] .m-layout .bottom-panel .content-row:last-child {
         margin-top: 7px; }
-    .m-layout .bottom-panel .chat-btn button {
+    body[device="true"] .m-layout .bottom-panel .chat-btn button {
       width: 46px;
       height: 46px;
       border-radius: 100%;
@@ -439,9 +527,9 @@ input[type=number] {
       flex-direction: row;
       justify-content: center;
       align-items: center; }
-      .m-layout .bottom-panel .chat-btn button img {
+      body[device="true"] .m-layout .bottom-panel .chat-btn button img {
         max-width: 22px; }
-    .m-layout .bottom-panel .time-indicator {
+    body[device="true"] .m-layout .bottom-panel .time-indicator {
       padding-left: 7px;
       padding-right: 7px;
       margin-left: auto;
@@ -454,17 +542,17 @@ input[type=number] {
       flex-direction: row;
       justify-content: flex-start;
       align-items: center; }
-      .m-layout .bottom-panel .time-indicator img {
+      body[device="true"] .m-layout .bottom-panel .time-indicator img {
         margin-right: 7px;
         max-width: 24px; }
-      .m-layout .bottom-panel .time-indicator label {
+      body[device="true"] .m-layout .bottom-panel .time-indicator label {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         font-size: 9.23px;
         color: #dee9f7;
         text-transform: uppercase;
         text-align: center; }
-    .m-layout .bottom-panel .in-game-action-tab {
+    body[device="true"] .m-layout .bottom-panel .in-game-action-tab {
       padding-left: 9px;
       padding-right: 9px;
       padding-top: 10px;
@@ -478,14 +566,14 @@ input[type=number] {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start; }
-      .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn {
+      body[device="true"] .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn {
         width: 127px;
         height: 63px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center; }
-        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn button {
+        body[device="true"] .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn button {
           width: 100%;
           height: 100%;
           border-radius: 4px;
@@ -501,22 +589,22 @@ input[type=number] {
           color: #ffffff;
           text-transform: uppercase;
           text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
-        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn:nth-child(1) button {
+        body[device="true"] .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn:nth-child(1) button {
           border-color: #ff4747;
           background: #f12020;
           background: radial-gradient(ellipse at top, #f12020 0%, #c20808 100%);
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f12020", endColorstr="#c20808", GradientType=1); }
-        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn:nth-child(2) button {
+        body[device="true"] .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn:nth-child(2) button {
           border-color: #a1ff5e;
           background: #67f000;
           background: radial-gradient(ellipse at top, #67f000 0%, #45a902 100%);
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#67f000", endColorstr="#45a902", GradientType=1); }
-        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn:nth-child(3) button {
+        body[device="true"] .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn:nth-child(3) button {
           border-color: #ffcc6b;
           background: #f7b436;
           background: radial-gradient(ellipse at top, #f7b436 0%, #be7e05 100%);
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7b436", endColorstr="#be7e05", GradientType=1); }
-    .m-layout .bottom-panel .in-game-betting-tab {
+    body[device="true"] .m-layout .bottom-panel .in-game-betting-tab {
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 7px;
@@ -531,18 +619,18 @@ input[type=number] {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start; }
-      .m-layout .bottom-panel .in-game-betting-tab .range-betting {
+      body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: row; }
-        .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker {
+        body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker {
           width: 254px;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: flex-start; }
-          .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax {
+          body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax {
             padding-left: 17px;
             padding-right: 17px;
             padding-bottom: 3px;
@@ -552,22 +640,22 @@ input[type=number] {
             flex-direction: row;
             justify-content: space-between;
             align-items: center; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small {
               font-family: "Montserrat", sans-serif;
               font-weight: 500;
               font-size: 8.74px;
               color: #000; }
-              .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small:first-child {
+              body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small:first-child {
                 color: #ffb26c; }
-              .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small:last-child {
+              body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small:last-child {
                 color: #8495ac; }
-          .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input {
+          body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input {
             width: 255px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input button {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input button {
               padding-bottom: 1px;
               width: 13px;
               height: 13px;
@@ -583,25 +671,25 @@ input[type=number] {
               font-size: 13.73px;
               color: #d1e6ff;
               line-height: 8px; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input {
               margin-left: 4px;
               margin-right: 4px;
               width: 220px; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range] {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range] {
               -webkit-appearance: none;
               width: 100%;
               background: transparent; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-webkit-slider-thumb {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-webkit-slider-thumb {
               -webkit-appearance: none; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]:focus {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]:focus {
               outline: none; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-ms-track {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-ms-track {
               width: 100%;
               cursor: pointer;
               background: transparent;
               border-color: transparent;
               color: transparent; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-webkit-slider-thumb {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-webkit-slider-thumb {
               margin-top: -2px;
               height: 17px;
               width: 17px;
@@ -611,7 +699,7 @@ input[type=number] {
               background-position: center;
               cursor: pointer;
               -webkit-appearance: none; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-moz-range-thumb {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-moz-range-thumb {
               height: 16px;
               width: 16px;
               border-radius: 16px;
@@ -620,7 +708,7 @@ input[type=number] {
               background-position: center;
               cursor: pointer;
               -webkit-appearance: none; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-ms-thumb {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-ms-thumb {
               height: 16px;
               width: 16px;
               border-radius: 16px;
@@ -629,30 +717,30 @@ input[type=number] {
               background-position: center;
               cursor: pointer;
               -webkit-appearance: none; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-webkit-slider-runnable-track {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-webkit-slider-runnable-track {
               width: 100%;
               height: 13px;
               border-radius: 13px;
               background: #414a56;
               cursor: pointer; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]:focus::-webkit-slider-runnable-track {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]:focus::-webkit-slider-runnable-track {
               background: #414a56; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-moz-range-track {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-moz-range-track {
               width: 100%;
               height: 13px;
               border-radius: 13px;
               background: #414a56;
               cursor: pointer; }
-            .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-ms-track {
+            body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input[type=range]::-ms-track {
               width: 100%;
               height: 13px;
               border-radius: 13px;
               background: #414a56;
               cursor: pointer; }
-        .m-layout .bottom-panel .in-game-betting-tab .range-betting .betting-value {
+        body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .betting-value {
           margin-left: auto;
           margin-right: 0; }
-          .m-layout .bottom-panel .in-game-betting-tab .range-betting .betting-value input {
+          body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .range-betting .betting-value input {
             width: 80px;
             height: 26px;
             border: 1px solid #323d4a;
@@ -663,7 +751,7 @@ input[type=number] {
             font-size: 10.72px;
             color: #ffffff;
             text-align: center; }
-      .m-layout .bottom-panel .in-game-betting-tab .quick-multiply {
+      body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .quick-multiply {
         margin-top: 8px;
         width: 100%;
         height: auto;
@@ -671,7 +759,7 @@ input[type=number] {
         flex-direction: row;
         justify-content: space-between;
         align-items: center; }
-        .m-layout .bottom-panel .in-game-betting-tab .quick-multiply button {
+        body[device="true"] .m-layout .bottom-panel .in-game-betting-tab .quick-multiply button {
           width: 79px;
           height: 31px;
           background-color: #dae1e9;
@@ -680,84 +768,3 @@ input[type=number] {
           font-weight: 600;
           font-size: 13.8px;
           color: #1f1f1f; }
-
-@media (max-width: 811px) {
-  .m-layout .top-panel {
-    padding-top: 13px;
-    padding-left: 8px;
-    padding-right: 8px; }
-    .m-layout .top-panel .chips-refill-btn button {
-      width: 29px;
-      height: 29px; }
-      .m-layout .top-panel .chips-refill-btn button img {
-        max-width: 19px; }
-    .m-layout .top-panel .menu-btn button {
-      width: 29px;
-      height: 29px; }
-      .m-layout .top-panel .menu-btn button img {
-        max-width: 19px; }
-    .m-layout .top-panel .leave-table-btn button {
-      width: 29px;
-      height: 29px; }
-      .m-layout .top-panel .leave-table-btn button img {
-        max-width: 19px; }
-  .m-layout .bottom-panel {
-    padding-left: 6px;
-    padding-right: 6px; }
-    .m-layout .bottom-panel .content-row:last-child {
-      margin-top: 5px; }
-    .m-layout .bottom-panel .chat-btn button {
-      width: 29px;
-      height: 29px; }
-      .m-layout .bottom-panel .chat-btn button img {
-        max-width: 19px; }
-    .m-layout .bottom-panel .time-indicator {
-      padding-left: 4px;
-      padding-right: 4px;
-      width: 75px;
-      height: 29px;
-      border-radius: 29px; }
-      .m-layout .bottom-panel .time-indicator img {
-        max-width: 13px; }
-      .m-layout .bottom-panel .time-indicator label {
-        font-size: 7px; }
-    .m-layout .bottom-panel .in-game-action-tab {
-      padding-left: 8px;
-      padding-right: 8px;
-      padding-top: 6px;
-      width: 297px;
-      height: 69px; }
-      .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn {
-        width: 90px;
-        height: 54px; }
-        .m-layout .bottom-panel .in-game-action-tab .in-game-action-btn button {
-          font-size: 11px; }
-    .m-layout .bottom-panel .in-game-betting-tab {
-      padding-left: 8px;
-      padding-right: 8px;
-      padding-top: 6px;
-      width: 255px;
-      height: 69px; }
-      .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker {
-        width: 178px; }
-        .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-minmax small {
-          font-size: 7px; }
-        .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input {
-          width: 178px; }
-          .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input button {
-            width: 11px;
-            height: 11px; }
-          .m-layout .bottom-panel .in-game-betting-tab .range-betting .range-picker .range-input input {
-            width: 149px;
-            height: 11px; }
-      .m-layout .bottom-panel .in-game-betting-tab .range-betting .betting-value input {
-        width: 57px;
-        height: 22px;
-        border-radius: 5px;
-        font-size: 9px; }
-      .m-layout .bottom-panel .in-game-betting-tab .quick-multiply {
-        padding-top: 1px; }
-        .m-layout .bottom-panel .in-game-betting-tab .quick-multiply button {
-          width: 56px;
-          height: 27px;
-          font-size: 11.75px; } }

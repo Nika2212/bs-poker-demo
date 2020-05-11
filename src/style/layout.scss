@@ -55,9 +55,6 @@
       justify-content: center;
       align-items: center;
 
-      * {
-        user-select: none;
-      }
       .popup {
         position: relative;
 
@@ -73,7 +70,6 @@
 
         overflow: hidden;
 
-        box-shadow: 1px 1px 6px rgba(0, 0, 0, .3);
 
         .popup-header {
           padding-left: 30px;

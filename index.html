@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1, viewport-fit=cover">
+          content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Poker Gameplay Demo</title>
     <link rel="stylesheet" href="dist/style.css">
 </head>
-<body>
+<body device="false">
     <div class="application">
         <div class="wrapper">
             <div class="table-layout">
                 <img src="dist/placeholder.png" alt="">
             </div>
-            <div class="m-layout" id="mobile-layout">
+            <div hidden class="m-layout" id="mobile-layout">
                 <div class="top-panel">
                     <div class="content-row">
                         <div class="chips-refill-btn">
-                            <button type="button">
-                                <img src="" alt="">
+                            <button type="button" class="popup-trigger" data-target="add-chips">
+                                <img src="./dist/add-cash.png" alt="">
                             </button>
                         </div>
                         <div class="menu-btn">
-                            <button type="button">
-                                <img src="" alt="">
+                            <button type="button" class="popup-trigger" data-target="">
+                                <img src="./dist/menu.png" alt="">
                             </button>
                         </div>
                     </div>
                     <div class="content-row">
-                        <div class="leave-table-btn">
-                            <button type="button"></button>
+                        <div class="fullscreen-btn">
+                            <button type="button" id="fullscreen-btn">
+                                <img src="./dist/fullscreen.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-row">
+                        <div class="leave-table-btn popup-trigger" data-target="leave-table">
+                            <button type="button">
+                                <img src="./dist/close.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="bottom-panel">
                     <div class="content-row">
                         <div class="chat-btn">
-                            <button type="button"></button>
+                            <button type="button">
+                                <img src="dist/messenger.png" alt="">
+                            </button>
                         </div>
                         <div class="time-indicator">
-                            <img src="" alt="">
+                            <img src="dist/timer.png" alt="">
                             <label>30<br>time bank</label>
                         </div>
                     </div>
@@ -77,73 +88,9 @@
                     </div>
                 </div>
             </div>
-            <div class="overlay" id="overlay">
-                <div hidden class="leave-table popup">
-                    <div class="popup-header">
-                        <label class="popup-heading">question</label>
-                        <button type="button" class="popup-close-btn">
-                            <img src="./dist/popup-close.png" alt="">
-                        </button>
-                    </div>
-                    <div class="popup-body">
-                        <img src="./dist/popup-question.png" alt="">
-                        <p>do you really want to leave table?</p>
-                    </div>
-                    <div class="popup-action">
-                        <button type="button">yes</button>
-                        <button type="button">no</button>
-                    </div>
-                </div>
-                <div hidden class="player-note popup">
-                    <div class="popup-header">
-                        <label class="popup-heading">player note: <span>nikab</span></label>
-                        <button type="button" class="popup-close-btn">
-                            <img src="./dist/popup-close.png" alt="">
-                        </button>
-                    </div>
-                    <div class="popup-body">
-                        <textarea placeholder="Please write a note"></textarea>
-                    </div>
-                    <div class="popup-action">
-                        <button type="button" class="player-note-color">
-                            <span></span>
-                            <img src="./dist/popup-arrow-down.png" alt="">
-                        </button>
-                        <button type="button" class="player-note-save">save</button>
-                        <button type="button" class="player-note-delete">delete</button>
-                        <button type="button" class="player-note-cancel">cancel</button>
-                    </div>
-                </div>
-                <div hidden class="add-chips popup">
-                    <div class="popup-header">
-                        <label class="popup-heading">Buy Chips (GEL)</label>
-                        <button type="button" class="popup-close-btn">
-                            <img src="./dist/popup-close.png" alt="">
-                        </button>
-                    </div>
-                    <div class="popup-body">
-                        <div class="not-allow-buying">
-                            <div class="alert-icon">
-                                <img src="./dist/popup-alert.png" alt="">
-                            </div>
-                            <p class="alert-text">you can't bring more chips at table</p>
-                            <span class="divider"></span>
-                            <div class="available-balance">
-                                <label>available balance</label>
-                                <label>35,000 GEL</label>
-                            </div>
-                            <div class="in-buy">
-                                buy <span>0 Gel</span> chips
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popup-action">
-                        <button type="button">yes</button>
-                        <button type="button">no</button>
-                    </div>
-                </div>
 
-                <div class="leave-table popup popup-mobile">
+            <div hidden class="overlay" id="overlay">
+                <div hidden id="leave-table" class="leave-table popup">
                     <div class="popup-header">
                         <label class="popup-heading">question</label>
                         <button type="button" class="popup-close-btn">
@@ -159,7 +106,7 @@
                         <button type="button">no</button>
                     </div>
                 </div>
-                <div hidden class="player-note popup popup-mobile">
+                <div hidden id="player-note" class="player-note popup">
                     <div class="popup-header">
                         <label class="popup-heading">player note: <span>nikab</span></label>
                         <button type="button" class="popup-close-btn">
@@ -179,7 +126,7 @@
                         <button type="button" class="player-note-cancel">cancel</button>
                     </div>
                 </div>
-                <div hidden class="add-chips popup popup-mobile">
+                <div hidden id="add-chips" class="add-chips popup">
                     <div class="popup-header">
                         <label class="popup-heading">Buy Chips (GEL)</label>
                         <button type="button" class="popup-close-btn">

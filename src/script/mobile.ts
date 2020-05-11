@@ -23,5 +23,5 @@ function detectOrientation() {
     }
 }
 function enableMobileLayout() {
-    document.getElementById("mobile-layout").style.display = "flex";
+    document.body.setAttribute("device", "true");
 }
